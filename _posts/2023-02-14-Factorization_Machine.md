@@ -39,7 +39,9 @@ Image("plots/23-02-14_01.png")
 일반적인 Linear Regression 형태라면 아래와 같이 정의한다. Linear Model은  데이터가 가진 특성을 표현하기에 부족하며, 변수와 변수 간의 interaction 정보가 무시된다. 
 
 
-$$\hat{y} =  w_0+\sum_{i=1}^{n}{w_ix_i}$$
+$$
+\hat{y} =  w_0+\sum_{i=1}^{n}{w_ix_i}
+$$
 
 ---
 ### Polynomial Model   
