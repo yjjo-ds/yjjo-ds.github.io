@@ -1,3 +1,10 @@
+---
+layout: single
+title: "[논문리뷰] Factorization Machine "
+categories: recommender system
+--- 
+
+
 ```python
 import os
 from IPython.display import Image 
