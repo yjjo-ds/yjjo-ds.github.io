@@ -2,6 +2,7 @@
 layout: single
 title: "[논문리뷰] Factorization Machine "
 categories: recommender system
+use_math: true
 --- 
 
 
