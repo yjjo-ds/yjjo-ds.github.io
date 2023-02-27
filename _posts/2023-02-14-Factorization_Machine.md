@@ -22,10 +22,10 @@ Factorization Machine(FM)을 검색해보면 다 아래 논문에서 발췌해�
     
 
 
-```python
+<!-- ```python
 Image("plots/23-02-14_01.png")
-```
-
+``` -->
+![example](../images/23-02-14_01.png)
 
 
 
