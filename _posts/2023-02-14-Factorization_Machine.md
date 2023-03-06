@@ -39,21 +39,21 @@ Image("plots/23-02-14_01.png")
 일반적인 Linear Regression 형태라면 아래와 같이 정의한다. Linear Model은  데이터가 가진 특성을 표현하기에 부족하며, 변수와 변수 간의 interaction 정보가 무시된다. 
 
 
-$$
+$
 \hat{y} =  w_0+\sum_{i=1}^{n}{w_ix_i}
-$$
+$
 
 ---
 ### Polynomial Model   
 LR의 단점을 보완하기 위해 PM 을 쓰면 LM 의 단점을 보완할 수 있으나 FM에서 구성하는 $x$(feature)가 많아질수록 계산 복잡도가 비선형으로 늘어나게 된다.
 
-$$\hat{y} =  w_0+\sum_{i=1}^{n}{w_ix_i}+\sum_{i=1}^{n}\sum_{j=i+1}^{n}{w_{ij}x_{i}x_{j}}$$
+$\hat{y} =  w_0+\sum_{i=1}^{n}{w_ix_i}+\sum_{i=1}^{n}\sum_{j=i+1}^{n}{w_{ij}x_{i}x_{j}}$
 
 ---
 ### Factorization Machine    
 Factorization Machine은 feature interaction vector 를 저차원으로 factorization 함으로써 계산복잡도 문제를 해결한다. Sparse 한 환경에서 feature 들은 독립성이 강해 interaction 을 추정하기 어려운 단점을 이론적으로 커버한다.  또한, 변수 간 내적으로 분해함으로써 연산 복잡도는 선형(linear)으로 유지한다.
 
-$$\hat{y} =  w_0+\sum_{i=1}^{n}{w_ix_i}+\sum_{i=1}^{n}\sum_{j=i+1}^{n}{(\vec{v_i}\cdot \vec{v_j})x_{i}x_{j}}$$
+$\hat{y} =  w_0+\sum_{i=1}^{n}{w_ix_i}+\sum_{i=1}^{n}\sum_{j=i+1}^{n}{(\vec{v_i}\cdot \vec{v_j})x_{i}x_{j}}$
 
 ---
 ### Reference
