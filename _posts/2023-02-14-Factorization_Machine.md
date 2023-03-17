@@ -28,9 +28,6 @@ Image("plots/23-02-14_01.png")
 ![example]({{site.url}}/images/23-02-14_01.png)
 
 
-
-    
-![png](output_4_0.png)
     
 
 
