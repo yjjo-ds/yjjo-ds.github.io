@@ -1,3 +1,10 @@
+---
+layout: single
+title: "[논문리뷰] Factorization Machine "
+categories: recommender system
+use_math: true
+--- 
+
 ## Cold Start
 
 이번 포스팅은 추천시스템을  구성할 때 빠지지 않는 문제인 Cold Start 에 대해 얘기해보려합니다. cold start 의 종류들을 찾아보다가 Wikipedia 문서에 잘 정리되어 있어 해당 내용을 정리해보았습니다. 
