@@ -54,3 +54,7 @@ use_math: true
 
 
 
+-----
+## 5) Reference 
+   
+- https://en.wikipedia.org/wiki/Cold_start_(recommender_systems)
