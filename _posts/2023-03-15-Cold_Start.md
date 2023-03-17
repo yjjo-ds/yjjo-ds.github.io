@@ -12,7 +12,7 @@ Cold Start 의 종류들을 찾아보다가 Wikipedia 문서에 잘 정리되어
 
 
 -----
-## 2) Cold Start 문제란?
+## 1) Cold Start 문제란?
 
 추천시스템은 고객이 흥미를 갖는 상품(정보)를 추천해주는 기술로 아이템 특성이나 사용자 흥미,평점,북마크,구입,선호,페이지 방문등과 같은 정보를 기반으로 한다. 그런데 이러한 정보가 부족한 상태로 상품을 추천하기 어려운 상태를 Cold Start(콜드 스타트) 라고 합니다. 
 
@@ -24,7 +24,7 @@ Cold Start 의 종류들을 찾아보다가 Wikipedia 문서에 잘 정리되어
 
 
 -----
-## 3) 신규 고객에 대한 각 모델 한계    
+## 2) 신규 고객에 대한 각 모델 한계    
 
 - item_based recommendation
     - 유저의 상품에 대한 평가를 기반으로 하기 때문에 추천정보를 얻을 수 없다.
@@ -34,7 +34,7 @@ Cold Start 의 종류들을 찾아보다가 Wikipedia 문서에 잘 정리되어
 
 
 -----
-## 4) Cold Start 해결하는 방법
+## 3) Cold Start 해결하는 방법
 
 
 다양한 추천 알고리즘이 있기 때문에 콜드 스타트 문제를 완화(mitigate) 하기 위한 다양한 전략이 개발되었습니다. 주요 접근은 각 한계를 완화하기 하이브리드 추천에 의존하는 것 
@@ -44,8 +44,10 @@ Cold Start 의 종류들을 찾아보다가 Wikipedia 문서에 잘 정리되어
     
 - Feature mapping
     - 구축된 latent factors(user-item matrix) 를 이용하여 interaction 이 없는 item feature 에 대해 추정하는 방법이다. 또는 group-specific 방법을 활용하여 item(또는 user)이 속하는 그룹의 latent factor 로 근사화
+
 - Hybrid feature weigting
     - featurne mapping 과 유사하게 hybrid content-based filtering recommender 를 구축하는 것으로 상품 또는 유저의 중요도 인식에 따라 가중치가 부여되는 방식입니다. (고객이 중요하다고 인식하는 것에 weighting을 주는 방법)
+
 - Differentiating regularization weights
     - **더 많은 정보를 드러내는 항목 또는 사용자(즉, 인기 있는 항목 및 활성 사용자)와 관련된 잠재 요인에 더 낮은 제약 조건을 할당하고 다른 항목(즉, 덜 인기 있는 항목)에 더 높은 제약 조건을 설정하여 콜드 스타트 문제를 완화합니다. 및 비활성 사용자)**
     - 과도하게 복잡한 모델을 학습하여 overfitting 되는 것을 방지하기 위함
@@ -54,6 +56,6 @@ Cold Start 의 종류들을 찾아보다가 Wikipedia 문서에 잘 정리되어
 
 
 -----
-## 5) Reference 
+## 4) Reference 
    
 - https://en.wikipedia.org/wiki/Cold_start_(recommender_systems)
